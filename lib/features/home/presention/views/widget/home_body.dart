@@ -1,3 +1,4 @@
+import 'package:bookly_clean_arc/core/utils/styles.dart';
 import 'package:bookly_clean_arc/features/home/presention/views/widget/custom_app_bar.dart';
 import 'package:bookly_clean_arc/features/home/presention/views/widget/custom_list_view.dart';
 import 'package:flutter/cupertino.dart';
@@ -10,10 +11,14 @@ class HomeBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 40),
-      child: Column(children: [
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
         CustomAppBar(),
         SizedBox(height: 10,),
-        CustomeListView()
+        CustomeListView(),
+          SizedBox(height: 20,),
+        Text("Best Seller" , style: Styles.style20,)
       
       ]),
     );
