@@ -1,5 +1,5 @@
 import 'package:bookly_clean_arc/features/home/presention/views/widget/custom_app_bar.dart';
-import 'package:bookly_clean_arc/features/home/presention/views/widget/custom_list_view_item.dart';
+import 'package:bookly_clean_arc/features/home/presention/views/widget/custom_list_view.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -12,7 +12,8 @@ class HomeBody extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 40),
       child: Column(children: [
         CustomAppBar(),
-        CustomListViewitem()
+        SizedBox(height: 10,),
+        CustomeListView()
       
       ]),
     );
