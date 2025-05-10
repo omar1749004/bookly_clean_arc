@@ -1,7 +1,9 @@
-import 'package:bookly_clean_arc/core/utils/assets_images.dart';
+import 'package:bookly_clean_arc/core/utils/app_route.dart';
 import 'package:bookly_clean_arc/core/utils/styles.dart';
 import 'package:bookly_clean_arc/features/home/presention/views/widget/book_rating.dart';
+import 'package:bookly_clean_arc/features/home/presention/views/widget/custom_image.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class BestsellerListViewitem extends StatelessWidget {
   const BestsellerListViewitem({super.key});
@@ -10,26 +12,13 @@ class BestsellerListViewitem extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-      //  GoRouter.of(context).push(AppRouter.kBookDetailsView);
+      GoRouter.of(context).push(AppRoute.kBookDetailsView);
       },
       child: SizedBox(
         height: 125,
         child: Row(
           children: [
-            AspectRatio(
-              aspectRatio: 2.5 / 4,
-              child: Container(
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(8),
-                    color: Colors.red,
-                    image:  DecorationImage(
-                      fit: BoxFit.fill,
-                      image: AssetImage(
-                        AssetsImages.tset,
-                      ),
-                    )),
-              ),
-            ),
+           CustomImage(),
             const SizedBox(
               width: 30,
             ),

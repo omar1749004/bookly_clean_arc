@@ -24,4 +24,9 @@ abstract class Styles {
     letterSpacing: 1.2,
     fontFamily: 'Inter',
   );
+    static const style18 = TextStyle(
+    fontSize: 18,
+    fontWeight: FontWeight.w600,
+  );
+
 }

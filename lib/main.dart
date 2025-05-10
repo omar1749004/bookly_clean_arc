@@ -1,5 +1,5 @@
 import 'package:bookly_clean_arc/core/constant/app_themes.dart';
-import 'package:bookly_clean_arc/core/utils/app_route.dart';
+import 'package:bookly_clean_arc/core/utils/routes.dart';
 import 'package:flutter/material.dart';
 
 void main() {

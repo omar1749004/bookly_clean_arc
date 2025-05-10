@@ -1,5 +1,5 @@
+import 'package:bookly_clean_arc/core/utils/app_route.dart';
 import 'package:bookly_clean_arc/core/utils/assets_images.dart';
-import 'package:bookly_clean_arc/core/utils/routes.dart';
 import 'package:flutter/material.dart';
 
 import 'package:go_router/go_router.dart';
@@ -66,12 +66,13 @@ class _SplashViewBodyState extends State<SplashViewBody>
 
   void navigatetoHome() {
      Future.delayed(const Duration(seconds: 2), () {
-      GoRouter.of(context).push(AppRoute.khome) ;
+     GoRouter.of(context).push(AppRoute.khome) ;
       // Get.to(
       //   () => HomeView(),
       //   transition: Transition.fade,
       //   duration: Duration(milliseconds: 250),
       // );
     });
+     
   }
 }
